@@ -1,0 +1,8 @@
+Scripts to spool an AWS cluster:
+1) src: python/boto3 scripts to create default aws instance, spool a cluster, and mount a shared NFS volume. 
+2) Example: scripts to run a Rayleigh Taylor problem with AMR. 
+
+To run this example, please run "sh run.sh from the './Example' directory". 
+It takes the user's inputs for number of slave instances and volume size (in GiB). 
+To spawn a 'k' node cluster, the number of slave instances is '(k-1)'.
+The Rayleigh Taylor problem performs a domain decomposition into 2 sub-domains, and therefore 1 slave node should be spawned.  
